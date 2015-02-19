@@ -24,6 +24,7 @@ abstract class AbstractFixer implements FixerInterface
         static $map = array(
             'PSR0'    => FixerInterface::PSR0_LEVEL,
             'PSR1'    => FixerInterface::PSR1_LEVEL,
+            'Drupal'  => FixerInterface::DRUPAL_LEVEL,
             'PSR2'    => FixerInterface::PSR2_LEVEL,
             'Symfony' => FixerInterface::SYMFONY_LEVEL,
             'Contrib' => FixerInterface::CONTRIB_LEVEL,

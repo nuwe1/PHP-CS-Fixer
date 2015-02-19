@@ -196,7 +196,6 @@ class Fixer
 
         // we do not need Tokens to still caching previously fixed file - so clear the cache
         Tokens::clearCache();
-
         try {
             foreach ($fixers as $fixer) {
                 if (!$fixer->supports($file)) {
