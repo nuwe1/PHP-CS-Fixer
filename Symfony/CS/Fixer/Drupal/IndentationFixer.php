@@ -62,6 +62,6 @@ class IndentationFixer extends AbstractFixer
      */
     public function getPriority()
     {
-        return 500;
+        return 50;
     }
 }
