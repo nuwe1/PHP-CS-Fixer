@@ -26,11 +26,24 @@ class DrupalFinder extends DefaultFinder
             ->name('*.module')
             ->name('*.inc')
             ->name('*.install')
+            ->name('*.theme')
+            ->name('*.profile')
             ->ignoreDotFiles(true)
             ->ignoreVCS(true)
             ->exclude(
                 array(
-                    'libraries',
+                  'libraries',
+                  '*default.inc*',
+                  '*jquery*',
+                  '*panelizer.inc*',
+                  '*.features.*',
+                  '*.min.js*',
+                  '*strongarm.inc*',
+                  '*App.js*',
+                  '*getid3*',
+                  '*phpseclib*',
+                  '*fpdf16*',
+                  'rml_tracked_return_retailer/classes/proxy*',
                 )
             )
         ;
